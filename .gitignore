@@ -1,0 +1,167 @@
+# AI Assistant local settings
+.claude/
+.opencode/
+.cursor/
+.aider/
+.continue/
+
+# Sensitive files - credentials & keys
+*.env
+*.env.*
+!*.env.example
+*.pem
+*.key
+*.p12
+*.pfx
+*.crt
+*.cer
+*credentials*
+*secret*
+*.keystore
+*.jks
+.npmrc
+.pypirc
+.netrc
+.aws/
+.azure/
+.gcp/
+
+# Sensitive files - tokens & auth
+*token*
+*auth*
+*.secret
+id_rsa*
+id_ed25519*
+id_ecdsa*
+id_dsa*
+known_hosts
+
+# OS generated files
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+Desktop.ini
+$RECYCLE.BIN/
+
+# Editor/IDE settings
+.vscode/
+.idea/
+*.swp
+*.swo
+*.swn
+*~
+*.sublime-workspace
+*.sublime-project
+.project
+.classpath
+.settings/
+*.code-workspace
+.history/
+
+# Logs
+*.log
+logs/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+lerna-debug.log*
+
+# Runtime & cache
+*.pid
+*.seed
+*.pid.lock
+.cache/
+.temp/
+.tmp/
+tmp/
+temp/
+
+# Node.js
+node_modules/
+.npm/
+.yarn/
+.pnp.*
+package-lock.json
+yarn.lock
+pnpm-lock.yaml
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+venv/
+.venv/
+env/
+.env/
+ENV/
+pip-log.txt
+pip-delete-this-directory.txt
+.mypy_cache/
+.pytest_cache/
+.ruff_cache/
+*.egg-info/
+dist/
+build/
+
+# Java/Kotlin/Gradle
+*.class
+*.jar
+*.war
+*.ear
+target/
+.gradle/
+build/
+
+# .NET
+bin/
+obj/
+*.dll
+*.exe
+*.pdb
+*.user
+*.suo
+*.cache
+packages/
+
+# Rust
+target/
+Cargo.lock
+
+# Go
+vendor/
+
+# Coverage & testing
+coverage/
+.nyc_output/
+*.lcov
+.coverage
+htmlcov/
+
+# Build outputs
+dist/
+out/
+build/
+*.min.js
+*.min.css
+*.map
+
+# Backup files
+*.bak
+*.backup
+*.old
+*.orig
+
+# Archives (usually shouldn't be in repos)
+*.zip
+*.tar
+*.tar.gz
+*.tgz
+*.rar
+*.7z
