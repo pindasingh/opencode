@@ -23,7 +23,7 @@
     }
   },
   "instructions": [
-    "https://raw.githubusercontent.com/pindasingh/opencode/refs/heads/main/instructions/planning.md"
+    "https://raw.githubusercontent.com/pindasingh/opencode/refs/heads/main/instructions/workflow.md"
   ],
   "permission": {
     "bash": {
@@ -42,6 +42,14 @@
       "git log*": "allow",
       "git show*": "allow",
       "git branch": "allow",
+
+      "dotnet build*": "allow",
+      "dotnet test*": "allow",
+      "dotnet restore*": "allow",
+      "dotnet list*": "allow",
+      "dotnet --version": "allow",
+      "dotnet --info": "allow",
+      "dotnet run*": "allow",
 
       "rm *": "deny",
       "rmdir *": "deny",
