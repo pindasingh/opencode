@@ -1,37 +1,17 @@
 {
   "$schema": "https://opencode.ai/config.json",
-  "agent": {
-    "build": {
-      "mode": "primary",
-      "description": "Full-power dev agent for complex work",
-      "model": "openai/gpt-5.2-codex"
-    },
-    "explore": {
-      "mode": "subagent",
-      "description": "Lightweight search/basic exploration",
-      "model": "openai/gpt-5.1-codex-mini"
-    },
-    "general": {
-      "mode": "subagent",
-      "description": "General-purpose research and multi-step tasks",
-      "model": "openai/gpt-5.1-codex-mini"
-    },
-    "plan": {
-      "mode": "primary",
-      "description": "Full-power planning agent",
-      "model": "openai/gpt-5.2-codex"
-    }
-  },
   "instructions": [
+    "https://raw.githubusercontent.com/pindasingh/opencode/refs/heads/main/instructions/discovery.md",
     "https://raw.githubusercontent.com/pindasingh/opencode/refs/heads/main/instructions/workflow.md"
   ],
   "permission": {
+    "*": "ask",
     "bash": {
       "*": "ask",
-
+      
       "ls *": "allow",
       "cat *": "allow",
-      "grep *": "allow",
+      "rg *": "allow",
       "find *": "allow",
       "head *": "allow",
       "tail *": "allow",
@@ -42,6 +22,7 @@
       "git log*": "allow",
       "git show*": "allow",
       "git branch": "allow",
+      "git move *": "allow",
 
       "dotnet build*": "allow",
       "dotnet test*": "allow",
@@ -51,6 +32,7 @@
       "dotnet --info": "allow",
       "dotnet run*": "allow",
 
+      "grep *": "deny",
       "rm *": "deny",
       "rmdir *": "deny",
       "del *": "deny",
@@ -77,11 +59,21 @@
       "* uninstall*": "deny",
       "* terminate*": "deny"
     },
-    "read": {
-      "*": "allow"
-    },
-    "edit": {
-      "*": "ask"
-    }
+    "codesearch": "allow",
+    "doom_loop": "deny",
+    "edit": { "*": "ask" },
+    "external_directory": "ask",
+    "glob": "allow",
+    "grep": "allow",
+    "list": "allow",
+    "lsp": "allow",
+    "question": "allow",
+    "read": { "*": "allow" },
+    "skill": "allow",
+    "task": "allow",
+    "todoread": "allow",
+    "todowrite": "allow",
+    "webfetch": "allow",
+    "websearch": "allow"
   }
 }
