@@ -28,7 +28,8 @@
   },
   "instructions": [
     "https://raw.githubusercontent.com/pindasingh/opencode/refs/heads/main/instructions/awareness.md",
-    "https://raw.githubusercontent.com/pindasingh/opencode/refs/heads/main/instructions/workflow.md"
+    "https://raw.githubusercontent.com/pindasingh/opencode/refs/heads/main/instructions/workflow.md",
+    "https://raw.githubusercontent.com/pindasingh/opencode/refs/heads/main/instructions/postcheck.md"
   ],
   "keybinds": {
     "agent_cycle": "tab",
