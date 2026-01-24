@@ -102,7 +102,7 @@
     "session_compact": "none",
     "session_export": "none",
     "session_fork": "none",
-    "session_interrupt": "none",
+    "session_interrupt": "escape",
     "session_list": "none",
     "session_new": "none",
     "session_parent": "none",
@@ -138,6 +138,7 @@
       "mkdir *": "allow",
       "mv *": "allow",
       "ren *": "allow",
+      "rg *": "allow",
       "type *": "allow",
       "where *": "allow",
 
