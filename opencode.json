@@ -117,7 +117,7 @@
       "git branch": "allow",
       "git diff*": "allow",
       "git log*": "allow",
-      "git move *": "allow",
+      "git mv *": "allow",
       "git show*": "allow",
       "git status*": "allow",
       "ls *": "allow",
@@ -125,6 +125,8 @@
       "head *": "allow",
       "rg *": "allow",
       "tail *": "allow",
+      "mkdir *": "allow",
+      "mv *": "allow",
       "pwd": "allow",
       "which *": "allow",
 
