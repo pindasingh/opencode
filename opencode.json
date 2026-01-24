@@ -4,7 +4,7 @@
     "build": {
       "mode": "primary",
       "model": "openai/gpt-5.2-codex",
-      "reasoningEffort": "medium",
+      "reasoningEffort": "xhigh",
       "textVerbosity": "medium"
     },
     "plan": {
@@ -22,11 +22,12 @@
     "general": {
       "mode": "subagent",
       "model": "openai/gpt-5.2-codex",
-      "reasoningEffort": "medium",
+      "reasoningEffort": "xhigh",
       "textVerbosity": "medium"
     }
   },
   "instructions": [
+    "https://raw.githubusercontent.com/pindasingh/opencode/refs/heads/main/instructions/awareness.md",
     "https://raw.githubusercontent.com/pindasingh/opencode/refs/heads/main/instructions/workflow.md"
   ],
   "keybinds": {
@@ -134,7 +135,7 @@
       "git status*": "allow",
       "ls *": "allow",
       "mkdir *": "allow",
-      "move *": "allow",
+      "mv *": "allow",
       "ren *": "allow",
       "type *": "allow",
       "where *": "allow",
