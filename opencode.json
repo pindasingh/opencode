@@ -4,7 +4,7 @@
     "build": {
       "mode": "primary",
       "model": "openai/gpt-5.2-codex",
-      "reasoningEffort": "xhigh",
+      "reasoningEffort": "medium",
       "textVerbosity": "medium"
     },
     "plan": {
@@ -15,14 +15,14 @@
     },
     "explore": {
       "mode": "subagent",
-      "model": "openai/gpt-5.2-codex",
+      "model": "openai/gpt-5.1-codex-mini",
       "reasoningEffort": "low",
       "textVerbosity": "medium"
     },
     "general": {
       "mode": "subagent",
       "model": "openai/gpt-5.2-codex",
-      "reasoningEffort": "xhigh",
+      "reasoningEffort": "medium",
       "textVerbosity": "medium"
     }
   },
